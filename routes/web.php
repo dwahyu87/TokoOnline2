@@ -37,6 +37,7 @@ Route::prefix('mahasiswa')->group(function () {
     });
 
 });
+
 // Route::get('/latihan', [LatihanController::class, 'home']);
 // Route::get('/beranda', [LatihanController::class, 'beranda']);
 // Route::get('/index', [HomepageController::class, 'index']);

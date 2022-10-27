@@ -12,22 +12,31 @@ use Illuminate\Support\Facades\Auth;
 
 
 // Route::get('/', [HomepageController::class, 'index']);
+
 Route::prefix('mahasiswa')->group(function () {
 
     Route::get('pendaftaran', function () {
-        echo "<h2>Halaman Pendaftaran</h2>";
+        $title = 'Pendaftaran';
+        $text = 'Halaman Pendaftaran';
+
+        return view('mahasiswa.index', compact('title', 'text'));
     });
 
     Route::get('ujian', function () {
-        echo "<h2>Halaman Ujian</h2>";
+        $title = 'ujian';
+        $text = 'Halaman Ujian';
+
+        return view('mahasiswa.index', compact('title', 'text'));
     });
 
     Route::get('nilai', function () {
-        echo "<h2>Halaman Nilai</h2>";
+        $title = 'Nilai';
+        $text = 'Halaman Nilai';
+
+        return view('mahasiswa.index', compact('title', 'text'));
     });
 
 });
-
 // Route::get('/latihan', [LatihanController::class, 'home']);
 // Route::get('/beranda', [LatihanController::class, 'beranda']);
 // Route::get('/index', [HomepageController::class, 'index']);
